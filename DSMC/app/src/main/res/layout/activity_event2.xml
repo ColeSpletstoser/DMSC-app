@@ -49,4 +49,14 @@
         android:layout_above="@+id/eventDescription"
         android:src="@android:drawable/ic_input_add"
         android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="97dp"
+        android:layout_alignEnd="@+id/imageButton"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
