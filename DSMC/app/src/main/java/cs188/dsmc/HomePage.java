@@ -2,10 +2,12 @@ package cs188.dsmc;
 
 import android.app.Activity;
 import android.app.ListActivity;
+import android.app.usage.UsageEvents;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -28,5 +30,18 @@ public class HomePage extends Activity {
 
         list_one.setAdapter(adapter1);
         list_two.setAdapter(adapter2);
+        list_two.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position == 1) {
+                    Intent intent = new Intent(HomePage.this, EventActivity.class);
+                    startActivity(intent);
+                }
+                else if(position == 0){
+                    Intent intent = new Intent(HomePage.this, EventActivity2.class);
+                    startActivity(intent);
+                }
+            }
+        });
+
     }
 }

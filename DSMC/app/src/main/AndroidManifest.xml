@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".WelcomePage" />
-        <activity android:name=".EventActivity"></activity>
+        <activity android:name=".EventActivity" />
+        <activity android:name=".EventActivity2"></activity>
     </application>
 
 </manifest>
