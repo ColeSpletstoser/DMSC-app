@@ -22,8 +22,8 @@ public class HomePage extends Activity {
         list_one = (ListView) findViewById(R.id.leftListView);
         list_two = (ListView) findViewById(R.id.rightListView);
 
-        String[] dates = {"Sat Sep 12\n7:00 PM", "Tue Sep 14\n5:00 PM"};
-        String[] events = {"DMSC Presents: An evening with Fendika", "World food & Music Week: SONDORGO"};
+        String[] dates = {"Sat Sep 12\n7:00 PM", "Tue Sep 14\n5:00 PM", "Wed Sep 15\n7:00 PM", "Thurs Sep 16\n5:30 PM"};
+        String[] events = {"DMSC Presents: An evening with Fendika", "World food & Music Week: SONDORGO", "Dang Good Songwriters Workshop", "Jazz Happy Hour"};
 
         ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dates);
         ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, events);
