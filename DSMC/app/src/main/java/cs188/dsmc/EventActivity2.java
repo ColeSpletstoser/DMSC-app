@@ -24,13 +24,13 @@ public class EventActivity2 extends Activity {
         eventDescription = (TextView) findViewById(R.id.eventDescription);
         eventDescription = (TextView) findViewById(R.id.eventDescription);
         test = (Button) findViewById(R.id.button2);
-        test.setOnClickListener(new View.OnClickListener(){
+        /*test.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(EventActivity2.this, SearchActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
        /* image.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
