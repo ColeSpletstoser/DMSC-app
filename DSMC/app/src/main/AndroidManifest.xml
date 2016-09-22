@@ -18,7 +18,9 @@
         <activity android:name=".WelcomePage" />
         <activity android:name=".EventActivity" />
         <activity android:name=".EventActivity2" />
-        <activity android:name=".SearchActivity"></activity>
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".EventActivity3" />
+        <activity android:name=".EventActivity4"></activity>
     </application>
 
 </manifest>

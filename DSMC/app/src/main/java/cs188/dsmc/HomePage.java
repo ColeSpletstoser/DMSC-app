@@ -22,8 +22,8 @@ public class HomePage extends Activity {
         list_one = (ListView) findViewById(R.id.leftListView);
         list_two = (ListView) findViewById(R.id.rightListView);
 
-        String[] dates = {"Sat Sep 12\n7:00 PM", "Tue Sep 14\n5:00 PM", "Wed Sep 15\n7:00 PM", "Thurs Sep 16\n5:30 PM"};
-        String[] events = {"DMSC Presents: An evening with Fendika", "World food & Music Week: SONDORGO", "Dang Good Songwriters Workshop", "Jazz Happy Hour"};
+        String[] dates = {"Thur Sep 22\n7:00 PM", "Thur Sep 22\n7:30 PM","Fri Sep 23\n5:00 PM", "Sun Sep 24\n3:00 PM"};
+        String[] events = {"DANG GOOD SONGWRITERS WORKSHOP","Chiffon","World food & Music Week: SONDORGO","Nola Jazz Band and Grand Avenue Ruckus"};
 
         ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dates);
         ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, events);
@@ -32,12 +32,20 @@ public class HomePage extends Activity {
         list_two.setAdapter(adapter2);
         list_two.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(position == 1) {
+                if(position == 0) {
+                    Intent intent = new Intent(HomePage.this, EventActivity2.class);
+                    startActivity(intent);
+                }
+                else if(position == 1){
+                    Intent intent = new Intent(HomePage.this, EventActivity3.class);
+                    startActivity(intent);
+                }
+                else if(position == 2){
                     Intent intent = new Intent(HomePage.this, EventActivity.class);
                     startActivity(intent);
                 }
-                else if(position == 0){
-                    Intent intent = new Intent(HomePage.this, EventActivity2.class);
+                else if(position == 3){
+                    Intent intent = new Intent(HomePage.this, EventActivity4.class);
                     startActivity(intent);
                 }
             }

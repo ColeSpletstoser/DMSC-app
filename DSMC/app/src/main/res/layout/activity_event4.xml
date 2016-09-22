@@ -7,13 +7,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="cs188.dsmc.EventActivity">
+    tools:context="cs188.dsmc.EventActivity4">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minHeight = "50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="SONDORGO (Hungarian Folk Music)"
+        android:text="NOLA Jazz Band and Grand Ave Ruckus"
         android:id="@+id/eventText"
         android:background="#74cce5"
         android:textColor="#ffffff"
@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="\nHailed as &quot;a world-class band&quot; (The Guard-ian) the group from Hungary do not thrill their audiences with your typical balkan brass or fiddle-led tunes, but with the tambura, a small and agile plucked instrument similar to the mandolin which is occasionally supplemented by wind instruments and accordions.  "
+        android:text="\nGet ready for a New Orleans Party! An afternoon of roots and brass band New Orleans music from the NOLA Jazz Band and Grand Ave Ruckus. The NOLA Jazz Band is proud to introduce our friends “Grand Ave Ruckus” and look forward to an expanding scene of traditional jazz in Des Moines during the first ever Firehouse Flea!"
         android:id="@+id/eventDescription"
         android:textColor="#000000"
         android:layout_alignParentStart="true"
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/dateText"
-        android:text="\nFriday Sep 23 \n5:00 PM - 7:00 PM \nBasement, Des Moines Social Club \n900 Mulberry Street \nDes Moines, IA 50309 \n"
+        android:text="\nSunday, September 24 2016 \n3:00-6:00 pm\n900 Mulberry Street\nDes Moines, IA 50309"
         android:textColor="#db5c87"
         android:textIsSelectable="true"
         android:layout_below="@+id/eventDescription"
