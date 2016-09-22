@@ -42,11 +42,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="0dp"
         android:text="ON"
         android:layout_gravity="right"
         android:checked="@bool/abc_config_closeDialogWhenTouchOutside"
-        android:layout_weight="0.07" />
+        android:layout_weight="0.07"
+        android:backgroundTint="#ffffff" />
 
     <TextView
         android:layout_width="59dp"
