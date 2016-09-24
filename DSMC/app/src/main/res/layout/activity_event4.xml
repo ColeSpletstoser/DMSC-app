@@ -51,7 +51,9 @@
         android:layout_height="wrap_content"
         android:maxWidth="2dp"
         android:id="@+id/imageButton"
-        android:src="@android:drawable/ic_input_add"
+        android:src="@mipmap/add_button"
         android:layout_alignTop="@+id/eventText"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/eventDescription"
+        android:layout_toEndOf="@+id/dateText" />
 </RelativeLayout>
