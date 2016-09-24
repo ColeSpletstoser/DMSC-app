@@ -2,6 +2,7 @@ package cs188.dsmc;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.provider.CalendarContract;
 import android.view.View;
@@ -18,6 +19,7 @@ public class EventActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event);
         image = (ImageButton) findViewById(R.id.imageButton);
+        image.setBackgroundDrawable(null);
         eventText = (TextView) findViewById(R.id.eventText);
         dateText = (TextView) findViewById(R.id.dateText);
         eventDescription = (TextView) findViewById(R.id.eventDescription);
