@@ -23,13 +23,15 @@
         android:id="@+id/searchView" />
 
     <TextView
-        android:layout_width="350dp"
-        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Music"
         android:id="@+id/textView2"
         android:textColor="#ffffff"
-        android:background="#74cce5" />
+        android:background="#74cce5"
+        android:editable="false"
+        android:textStyle="bold" />
 
     <LinearLayout android:orientation="horizontal"
         android:layout_width="fill_parent"
