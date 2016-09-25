@@ -16,6 +16,7 @@
         android:layout_weight="0.04"
         android:background="#74cce5"
         android:textColor="#fdfcfc"
+        android:gravity ="center"
         android:editable="false"
         android:clickable="false"
         android:textStyle="bold"
