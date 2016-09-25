@@ -9,7 +9,7 @@ import android.graphics.Typeface;
 import android.provider.CalendarContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.SearchView;
+//import android.support.v7.widget.SearchView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -17,6 +17,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.SearchView;
 import android.app.SearchManager;
 import android.widget.SearchView.OnQueryTextListener;
 public class HomePage extends Activity {
@@ -28,6 +29,8 @@ public class HomePage extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+        searchView = (SearchView) findViewById(R.id.searchView);
+        searchView.setIconifiedByDefault(false);
         list_one = (ListView) findViewById(R.id.leftListView);
         list_two = (ListView) findViewById(R.id.rightListView);
         settingsImage = (ImageButton) findViewById(R.id.imageButton2);
