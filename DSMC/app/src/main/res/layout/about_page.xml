@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="  ABOUT"
+        android:text="    ABOUT"
         android:id="@+id/textView2"
         android:minHeight="50dp"
         android:layout_weight="0.04"
