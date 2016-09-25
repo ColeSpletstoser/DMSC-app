@@ -32,13 +32,9 @@
         android:textSize="15dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:textStyle="bold" />
-<<<<<<< HEAD
-        android:layout_alignParentEnd="true"
-        android:textStyle="bold" />
-=======
+        android:textStyle="bold"
         android:layout_toStartOf="@+id/imageButton" />
->>>>>>> origin/master
+
 
     <TextView
         android:layout_width="wrap_content"
