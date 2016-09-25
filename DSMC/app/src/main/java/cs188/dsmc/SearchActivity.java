@@ -11,5 +11,6 @@ public class SearchActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
         search = (SearchView) findViewById(R.id.searchView);
+        search.setIconified(true);
     }
 }
