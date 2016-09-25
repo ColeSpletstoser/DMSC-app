@@ -23,6 +23,7 @@ public class EventActivity extends Activity {
         eventText = (TextView) findViewById(R.id.eventText);
         dateText = (TextView) findViewById(R.id.dateText);
         eventDescription = (TextView) findViewById(R.id.eventDescription);
+        eventDescription = (TextView) findViewById(R.id.eventDescription);
         image.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {

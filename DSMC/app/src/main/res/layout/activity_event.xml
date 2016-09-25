@@ -14,9 +14,11 @@
         android:layout_height="wrap_content"
         android:maxWidth="2dp"
         android:id="@+id/imageButton"
-        android:src="@mipmap/final_add"
-        android:layout_alignBottom="@+id/eventText"
-        android:layout_alignEnd="@+id/dateText" />
+        android:src="@mipmap/add_button"
+        android:layout_alignTop="@+id/eventText"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/eventDescription"
+        android:layout_toEndOf="@+id/dateText" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
