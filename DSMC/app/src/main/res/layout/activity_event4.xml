@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:minHeight = "50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="NOLA Jazz Band and Grand Ave Ruckus"
+        android:text="  NOLA Jazz Band and Grand Ave Ruckus"
         android:id="@+id/eventText"
         android:background="#74cce5"
         android:textColor="#ffffff"

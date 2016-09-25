@@ -1,7 +1,10 @@
 package cs188.dsmc;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.CalendarContract;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -20,5 +23,13 @@ public class EventActivity4 extends Activity {
         dateText = (TextView) findViewById(R.id.dateText);
         eventDescription = (TextView) findViewById(R.id.eventDescription);
         eventDescription = (TextView) findViewById(R.id.eventDescription);
+        image.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent calIntent = new Intent(Intent.ACTION_INSERT);
+                calIntent.setData(CalendarContract.Events.CONTENT_URI);
+                startActivity(calIntent);
+            }
+        });
     }
 }
