@@ -5,6 +5,7 @@ import android.app.ListActivity;
 import android.app.usage.UsageEvents;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,7 +29,22 @@ public class HomePage extends Activity {
         String[] dates = {"Thur Sep 22\n7:00 PM", "Thur Sep 22\n7:30 PM","Fri Sep 23\n5:00 PM", "Sun Sep 24\n3:00 PM"};
         String[] events = {"DANG GOOD SONGWRITERS WORKSHOP","Chiffon","World food & Music Week: SONDORGO","Nola Jazz Band and Grand Avenue Ruckus"};
 
-        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dates);
+        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dates){
+            @Override
+            public View getView(int position, View convertView, ViewGroup parent){
+                // Get the Item from ListView
+                View view = super.getView(position, convertView, parent);
+
+                // Initialize a TextView for ListView each Item
+                TextView tv = (TextView) view.findViewById(android.R.id.text1);
+
+                // Set the text color of TextView (ListView Item)
+                tv.setTypeface(Typeface.DEFAULT_BOLD);
+
+                // Generate ListView Item using TextView
+                return view;
+            }
+        };
         ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, events){
             @Override
             public View getView(int position, View convertView, ViewGroup parent){
@@ -39,12 +55,11 @@ public class HomePage extends Activity {
                 TextView tv = (TextView) view.findViewById(android.R.id.text1);
 
                 // Set the text color of TextView (ListView Item)
-                tv.setTextColor(Color.MAGENTA);
+                tv.setTextColor(Color.argb(255, 219, 92, 135));
 
                 // Generate ListView Item using TextView
                 return view;
             }
-
         };
 
         list_one.setAdapter(adapter1);
