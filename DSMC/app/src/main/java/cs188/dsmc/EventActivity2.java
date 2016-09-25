@@ -19,6 +19,7 @@ public class EventActivity2 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event2);
         image = (ImageButton) findViewById(R.id.imageButton);
+        image.setBackgroundDrawable(null);
         eventText = (TextView) findViewById(R.id.eventText);
         dateText = (TextView) findViewById(R.id.dateText);
         eventDescription = (TextView) findViewById(R.id.eventDescription);

@@ -3,10 +3,6 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/dmsc_background" >
 
 
@@ -24,9 +20,9 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Music"
+        android:text="    MUSIC"
         android:id="@+id/textView2"
         android:textColor="#ffffff"
         android:background="#74cce5"
