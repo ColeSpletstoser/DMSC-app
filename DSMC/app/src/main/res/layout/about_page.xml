@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="The app is designed for The Des Mones Social club. The Des Moines Social Clu is "
+        android:text="As an innovative arts and entertainment venue, the Des Moines Social Club has a lot to offer. From the live music for adults to art courses for children, they pride themselves on being neutral in all fields and attracting a wide array of visitors."
         android:id="@+id/textView9"
         android:layout_below="@+id/textView2"
         android:layout_marginTop="53dp"
@@ -41,6 +41,8 @@
         android:text="http://desmoinessoicalclub.org/"
         android:id="@+id/textView10"
         android:textColor="#db5c87"
+        android:layout_below="@id/textView9"
+        android:layout_marginTop ="53dp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
