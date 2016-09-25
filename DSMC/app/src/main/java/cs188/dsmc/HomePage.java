@@ -6,29 +6,37 @@ import android.app.usage.UsageEvents;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.provider.CalendarContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+//import android.support.v7.widget.SearchView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
-
+import android.widget.SearchView;
+import android.app.SearchManager;
+import android.widget.SearchView.OnQueryTextListener;
 public class HomePage extends Activity {
     private ListView list_one;
     private ListView list_two;
-
+    private ImageButton settingsImage;
+    private SearchView searchView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+        searchView = (SearchView) findViewById(R.id.searchView);
+        searchView.setIconifiedByDefault(false);
         list_one = (ListView) findViewById(R.id.leftListView);
         list_two = (ListView) findViewById(R.id.rightListView);
-
+        settingsImage = (ImageButton) findViewById(R.id.imageButton2);
+        settingsImage.setBackgroundDrawable(null);
         String[] dates = {"Thur Sep 22\n7:00 PM", "Thur Sep 22\n7:30 PM","Fri Sep 23\n5:00 PM", "Sun Sep 24\n3:00 PM"};
         String[] events = {"DANG GOOD SONGWRITERS WORKSHOP","Chiffon","World food & Music Week: SONDORGO","Nola Jazz Band and Grand Avenue Ruckus"};
-
         ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dates){
             @Override
             public View getView(int position, View convertView, ViewGroup parent){
@@ -82,6 +90,13 @@ public class HomePage extends Activity {
                     Intent intent = new Intent(HomePage.this, EventActivity4.class);
                     startActivity(intent);
                 }
+            }
+        });
+        settingsImage.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomePage.this, SettingsPage.class);
+                startActivity(intent);
             }
         });
 
